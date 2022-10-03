@@ -358,7 +358,6 @@ export const Preview = forwardRef(
                       hasCss = typeof css === 'undefined' ? false : true
                     }
                     </script>
-                    <script src="https://unpkg.com/petite-vue" defer init></script>
                   </head>
                   <body style="display:none">
                   </body>
