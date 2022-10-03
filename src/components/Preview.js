@@ -310,6 +310,7 @@ export const Preview = forwardRef(
                     <meta charset="utf-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                     <style id="_style"></style>
+                    <script src="https://unpkg.com/petite-vue"></script>
                     <script>
                     var hasHtml = false
                     var hasCss = false
@@ -345,6 +346,7 @@ export const Preview = forwardRef(
                       } else {
                         document.body.innerHTML = html
                         hasHtml = true
+                        PetiteVue.createApp().mount()
                       }
                     }
                     function setCss(css) {
@@ -356,6 +358,7 @@ export const Preview = forwardRef(
                       hasCss = typeof css === 'undefined' ? false : true
                     }
                     </script>
+                    <script src="https://unpkg.com/petite-vue" defer init></script>
                   </head>
                   <body style="display:none">
                   </body>
